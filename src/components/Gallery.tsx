@@ -11,9 +11,9 @@ const galleryImages = [
     category: 'Lawns',
   },
   {
-    src: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=80',
-    alt: 'Professional lawn edging',
-    category: 'Edging',
+    src: '/images/planting-plants.png',
+    alt: 'Flower bed installation',
+    category: 'Landscaping',
   },
   {
     src: '/images/weed-trimming.jpeg',
