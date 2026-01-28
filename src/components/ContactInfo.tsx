@@ -159,23 +159,23 @@ export default function ContactInfo() {
           className="grid grid-cols-1 lg:grid-cols-2 gap-8"
         >
           {/* Business Hours */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-lawn-green rounded-xl flex items-center justify-center">
                 <Clock size={24} className="text-white" />
               </div>
-              <h3 className="font-display text-2xl font-bold text-white uppercase tracking-tight">
+              <h3 className="font-display text-2xl font-bold text-navy-blue uppercase tracking-tight">
                 Business Hours
               </h3>
             </div>
             <div className="space-y-4">
               {businessHours.map((item) => (
-                <div 
+                <div
                   key={item.day}
-                  className="flex justify-between items-center py-3 border-b border-white/10 last:border-0"
+                  className="flex justify-between items-center py-3 border-b border-gray-200 last:border-0"
                 >
-                  <span className="text-white font-semibold">{item.day}</span>
-                  <span className={`font-body ${item.hours === 'Closed' ? 'text-patriot-red' : 'text-white/80'}`}>
+                  <span className="text-navy-blue font-semibold">{item.day}</span>
+                  <span className={`font-body ${item.hours === 'Closed' ? 'text-patriot-red' : 'text-text-secondary'}`}>
                     {item.hours}
                   </span>
                 </div>
@@ -184,25 +184,25 @@ export default function ContactInfo() {
           </div>
 
           {/* Why Choose Us */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-lawn-green rounded-xl flex items-center justify-center">
                 <Star size={24} className="text-white" />
               </div>
-              <h3 className="font-display text-2xl font-bold text-white uppercase tracking-tight">
+              <h3 className="font-display text-2xl font-bold text-navy-blue uppercase tracking-tight">
                 Why Choose Us
               </h3>
             </div>
             <div className="grid grid-cols-2 gap-4">
               {whyChooseUs.map((item) => (
-                <div 
+                <div
                   key={item.text}
-                  className="flex items-center gap-3 bg-white/5 rounded-xl p-4"
+                  className="flex items-center gap-3 bg-gray-50 rounded-xl p-4"
                 >
                   <div className="w-10 h-10 bg-lawn-green/20 rounded-lg flex items-center justify-center flex-shrink-0">
                     <item.icon size={20} className="text-lawn-green" />
                   </div>
-                  <span className="text-white font-semibold text-sm">{item.text}</span>
+                  <span className="text-navy-blue font-semibold text-sm">{item.text}</span>
                 </div>
               ))}
             </div>
