@@ -79,7 +79,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl md:text-2xl text-white/90 mb-8 font-body font-light leading-relaxed"
           >
-            Professional lawn care services in Greenville, SC. We bring 
+            Professional lawn care services in Anderson, SC. We bring 
             <span className="font-semibold text-white"> military precision</span> and 
             <span className="font-semibold text-white"> dedication</span> to every yard we service.
           </motion.p>
@@ -132,7 +132,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.8 }}
             className="mt-8 text-white/60 text-sm font-body"
           >
-            Proudly serving the Greenville, SC area and all of Upstate South Carolina
+            Proudly serving the Anderson, SC area and all of Upstate South Carolina
           </motion.p>
         </div>
       </div>

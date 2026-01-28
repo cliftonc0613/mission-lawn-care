@@ -21,7 +21,7 @@ const contactCards = [
   {
     icon: MapPin,
     title: 'Visit Us',
-    primary: 'Greenville, SC Area',
+    primary: 'Anderson, SC Area',
     secondary: 'Serving Upstate SC',
     href: null,
   },
@@ -94,7 +94,7 @@ export default function ContactInfo() {
           <div className="h-1 w-20 bg-lawn-green rounded-full mx-auto mb-6" />
           <p className="text-white/90 text-lg max-w-2xl mx-auto font-body">
             Ready to transform your lawn? Reach out to us today for a free estimate. 
-            We proudly serve the Greenville, SC area and all of Upstate South Carolina.
+            We proudly serve the Anderson, SC area and all of Upstate South Carolina.
           </p>
         </motion.div>
 

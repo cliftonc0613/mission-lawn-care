@@ -25,7 +25,7 @@ const pillars = [
   {
     icon: Heart,
     title: 'Community Focused',
-    description: 'We\'re your neighbors in the Greenville, SC area. We take pride in beautifying our community, one lawn at a time.',
+    description: 'We\'re your neighbors in the Anderson, SC area. We take pride in beautifying our community, one lawn at a time.',
     color: 'bg-brand-blue-dark',
   },
 ];

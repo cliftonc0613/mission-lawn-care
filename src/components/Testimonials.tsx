@@ -6,7 +6,7 @@ import { Star, Quote } from 'lucide-react';
 const testimonials = [
   {
     name: 'Sarah M.',
-    location: 'Greenville, SC',
+    location: 'Anderson, SC',
     text: 'Mission Lawn Care transformed our yard! Their attention to detail is unmatched. You can really see the military precision in their work.',
     rating: 5,
   },

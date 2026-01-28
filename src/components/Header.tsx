@@ -39,7 +39,7 @@ export default function Header() {
             </a>
             <div className="flex items-center gap-2">
               <MapPin size={14} />
-              <span>Greenville, SC Area</span>
+              <span>Anderson, SC Area</span>
             </div>
           </div>
           <div className="veteran-badge text-xs">

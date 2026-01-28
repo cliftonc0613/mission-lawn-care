@@ -24,7 +24,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-gray-300 mb-4 font-body">
-              Veteran-owned lawn care service dedicated to serving the Greenville, SC area with 
+              Veteran-owned lawn care service dedicated to serving the Anderson, SC area with 
               precision, reliability, and the discipline that comes from military service.
             </p>
             <div className="veteran-badge bg-brand-blue/20 border border-brand-blue">
@@ -121,7 +121,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <span className="text-xs uppercase tracking-wider text-gray-400">Location</span>
-                    <p className="font-semibold">Greenville, SC Area</p>
+                    <p className="font-semibold">Anderson, SC Area</p>
                   </div>
                 </div>
               </li>
@@ -138,7 +138,7 @@ export default function Footer() {
               © {currentYear} Mission Lawn Care. All rights reserved.
             </p>
             <div className="flex items-center gap-4 text-gray-400 text-sm">
-              <span>Greenville, SC Area</span>
+              <span>Anderson, SC Area</span>
               <span className="w-1 h-1 bg-gray-500 rounded-full" />
               <a 
                 href="tel:8649406434"
