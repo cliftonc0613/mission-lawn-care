@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Shield, Target, Users, MapPin, Heart, Phone, ArrowRight } from 'lucide-react';
+import { Shield, Target, Users, MapPin, Heart, Phone, ArrowRight, Navigation } from 'lucide-react';
 
 const values = [
   {
@@ -29,12 +29,14 @@ const values = [
 ];
 
 const serviceAreas = [
-  'Anderson',
-  'Belton',
-  'Williamston',
-  'Pendleton',
-  'Clemson',
-  'Honea Path',
+  { name: 'Anderson', distance: null, isPrimary: true },
+  { name: 'Greenville', distance: '30 miles' },
+  { name: 'Clemson', distance: '12 miles' },
+  { name: 'Seneca', distance: '18 miles' },
+  { name: 'Easley', distance: '15 miles' },
+  { name: 'Pendleton', distance: '8 miles' },
+  { name: 'Belton', distance: '8 miles' },
+  { name: 'Williamston', distance: '10 miles' },
 ];
 
 export default function AboutPage() {
@@ -202,49 +204,59 @@ export default function AboutPage() {
       {/* Service Area Section */}
       <section className="section-padding bg-background grass-overlay">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Content */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <span className="inline-block text-lawn-green font-display uppercase tracking-widest text-sm mb-4">
+              Where We Work
+            </span>
+            <h2 className="heading-secondary mb-4">
+              Service <span className="text-lawn-green">Areas</span>
+            </h2>
+            <div className="accent-line mx-auto mb-6" />
+            <p className="text-text-secondary text-lg max-w-3xl mx-auto font-body">
+              Mission Lawn Care proudly serves Anderson, SC and the surrounding communities.
+              We cover all areas within a 30-mile radius.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Service Areas Grid */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
+              className="grid grid-cols-2 gap-4"
             >
-              <span className="inline-block text-lawn-green font-display uppercase tracking-widest text-sm mb-4">
-                Where We Work
-              </span>
-              <h2 className="heading-secondary mb-6">
-                Service <span className="text-lawn-green">Area</span>
-              </h2>
-              <div className="accent-line mb-8" />
-              
-              <p className="text-text-secondary font-body leading-relaxed mb-8">
-                Mission Lawn Care proudly serves Anderson, SC and the surrounding 
-                communities. We&apos;re local, we&apos;re your neighbors, and we&apos;re committed 
-                to keeping our community beautiful.
-              </p>
-
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8">
-                {serviceAreas.map((area) => (
-                  <div 
-                    key={area}
-                    className="flex items-center gap-2 text-text-primary"
-                  >
-                    <MapPin size={16} className="text-lawn-green" />
-                    <span className="font-body">{area}</span>
+              {serviceAreas.map((area) => (
+                <div
+                  key={area.name}
+                  className={`rounded-xl p-6 text-center transition-all duration-300 hover:shadow-lg ${
+                    area.isPrimary
+                      ? 'bg-lawn-green/10 border-2 border-lawn-green'
+                      : 'bg-white border border-gray-200 hover:border-lawn-green/50'
+                  }`}
+                >
+                  <div className={`w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-3 ${
+                    area.isPrimary ? 'bg-lawn-green' : 'bg-gray-200'
+                  }`}>
+                    <Navigation size={18} className={area.isPrimary ? 'text-white' : 'text-navy-blue'} />
                   </div>
-                ))}
-              </div>
-
-              <a
-                href="https://maps.app.goo.gl/t7SG8NmSsDhKsago6"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary inline-flex items-center gap-2"
-              >
-                <MapPin size={18} />
-                Find Us on Google Maps
-              </a>
+                  <h3 className={`font-display font-bold uppercase tracking-tight mb-1 ${
+                    area.isPrimary ? 'text-lawn-green text-lg' : 'text-navy-blue'
+                  }`}>
+                    {area.name}
+                  </h3>
+                  <p className={`text-sm ${area.isPrimary ? 'text-lawn-green-dark font-medium' : 'text-text-secondary'}`}>
+                    {area.isPrimary ? 'Primary Service Area' : area.distance}
+                  </p>
+                </div>
+              ))}
             </motion.div>
 
             {/* Map Embed */}
@@ -267,6 +279,15 @@ export default function AboutPage() {
                   title="Mission Lawn Care Service Area"
                 />
               </div>
+              <a
+                href="https://maps.app.goo.gl/t7SG8NmSsDhKsago6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 flex items-center justify-center gap-2 text-lawn-green hover:text-lawn-green-dark transition-colors font-semibold"
+              >
+                <MapPin size={18} />
+                View on Google Maps
+              </a>
             </motion.div>
           </div>
         </div>
