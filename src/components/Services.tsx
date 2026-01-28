@@ -8,7 +8,7 @@ const services = [
     icon: Scissors,
     title: 'Lawn Mowing',
     description: 'Regular mowing service with professional-grade equipment. We maintain your lawn at the optimal height for lush, healthy grass.',
-    image: 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?auto=format&fit=crop&w=800&q=80',
+    image: '/images/front-lawn-maintenance.png',
   },
   {
     icon: TreeDeciduous,
@@ -20,7 +20,7 @@ const services = [
     icon: Leaf,
     title: 'Residential Care',
     description: 'Complete residential lawn care packages tailored to your home. Regular maintenance, fertilization, and attention to keep your property looking its best year-round.',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+    image: '/images/front-yard-sod.jpg',
   },
   {
     icon: Sparkles,
