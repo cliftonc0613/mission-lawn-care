@@ -65,7 +65,7 @@ export default function Header() {
                 alt="Mission Lawn Care"
                 width={250}
                 height={100}
-                className="h-[100px] w-auto"
+                className="h-[65px] w-auto"
                 priority
               />
             </Link>
