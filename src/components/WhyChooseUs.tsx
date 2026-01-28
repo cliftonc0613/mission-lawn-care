@@ -20,12 +20,12 @@ const pillars = [
     icon: Clock,
     title: 'Prompt Response',
     description: 'Quick estimates and fast scheduling. We respect your time and work around your schedule.',
-    color: 'bg-accent-orange',
+    color: 'bg-lawn-green',
   },
   {
     icon: Heart,
     title: 'Community Focused',
-    description: 'We\'re your neighbors in the Greenville, SC area. We take pride in beautifying our community, one lawn at a time.',
+    description: 'We\'re your neighbors in the Anderson, SC area. We take pride in beautifying our community, one lawn at a time.',
     color: 'bg-brand-blue-dark',
   },
 ];
@@ -64,7 +64,7 @@ export default function WhyChooseUs() {
 
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-brand-blue-light/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-orange/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-lawn-green/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
       <div className="container-custom relative z-10">
         {/* Section Header */}
@@ -79,9 +79,9 @@ export default function WhyChooseUs() {
             The Mission Difference
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white uppercase tracking-tight mb-4">
-            Why Choose <span className="text-accent-orange">Us</span>
+            Why Choose <span className="text-lawn-green">Us</span>
           </h2>
-          <div className="h-1 w-20 bg-accent-orange rounded-full mx-auto mb-6" />
+          <div className="h-1 w-20 bg-lawn-green rounded-full mx-auto mb-6" />
           <p className="text-gray-300 text-lg max-w-2xl mx-auto font-body">
             When you hire Mission Lawn Care, you&apos;re getting more than just a lawn service. 
             You&apos;re partnering with a veteran-owned business committed to excellence.

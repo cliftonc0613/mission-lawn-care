@@ -14,18 +14,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo & About */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center mb-6">
-              <div className="relative w-24 h-24 bg-white rounded-lg p-2">
-                <Image
-                  src="/images/mission-lawn-care-logo.png"
-                  alt="Mission Lawn Care"
-                  fill
-                  className="object-contain p-1"
-                />
-              </div>
+            <Link href="/" className="inline-block mb-6">
+              <Image
+                src="/images/mission-lawn-care-logo.png"
+                alt="Mission Lawn Care"
+                width={250}
+                height={100}
+                className="w-full h-auto"
+              />
             </Link>
             <p className="text-gray-300 mb-4 font-body">
-              Veteran-owned lawn care service dedicated to serving the Greenville, SC area with 
+              Veteran-owned lawn care service dedicated to serving the Anderson, SC area with 
               precision, reliability, and the discipline that comes from military service.
             </p>
             <div className="veteran-badge bg-brand-blue/20 border border-brand-blue">
@@ -51,7 +50,7 @@ export default function Footer() {
                     href={link.href}
                     className="text-gray-300 hover:text-brand-blue-light transition-colors font-body flex items-center gap-2 group"
                   >
-                    <span className="w-2 h-2 bg-accent-orange rounded-full group-hover:bg-brand-blue transition-colors" />
+                    <span className="w-2 h-2 bg-lawn-green rounded-full group-hover:bg-brand-blue transition-colors" />
                     {link.label}
                   </Link>
                 </li>
@@ -103,7 +102,7 @@ export default function Footer() {
               </li>
               <li>
                 <a 
-                  href="mailto:info@missionlawncare.com"
+                  href="mailto:missionlawncare@yahoo.com"
                   className="flex items-center gap-3 text-gray-300 hover:text-brand-blue-light transition-colors group"
                 >
                   <div className="w-10 h-10 bg-brand-blue/20 rounded-lg flex items-center justify-center group-hover:bg-brand-blue/40 transition-colors">
@@ -111,7 +110,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <span className="text-xs uppercase tracking-wider text-gray-400">Email</span>
-                    <p className="font-semibold text-sm">info@missionlawncare.com</p>
+                    <p className="font-semibold text-sm">missionlawncare@yahoo.com</p>
                   </div>
                 </a>
               </li>
@@ -122,7 +121,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <span className="text-xs uppercase tracking-wider text-gray-400">Location</span>
-                    <p className="font-semibold">Greenville, SC Area</p>
+                    <p className="font-semibold">Anderson, SC Area</p>
                   </div>
                 </div>
               </li>
@@ -139,7 +138,7 @@ export default function Footer() {
               © {currentYear} Mission Lawn Care. All rights reserved.
             </p>
             <div className="flex items-center gap-4 text-gray-400 text-sm">
-              <span>Greenville, SC Area</span>
+              <span>Anderson, SC Area</span>
               <span className="w-1 h-1 bg-gray-500 rounded-full" />
               <a 
                 href="tel:8649406434"

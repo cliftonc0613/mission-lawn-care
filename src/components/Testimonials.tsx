@@ -5,21 +5,21 @@ import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Sarah M.',
-    location: 'Greenville, SC',
-    text: 'Mission Lawn Care transformed our yard! Their attention to detail is unmatched. You can really see the military precision in their work.',
+    name: 'Alyssa Miller',
+    location: 'Anderson, SC',
+    text: 'Jeremy did an INCREDIBLE job. We recently moved into a home that was in really rough shape; Jeremy completely transformed the yard, bushes, and overall appearance of the home. He listened to me when I asked for something and ensured I was happy before the job was complete. I would 1000% recommend him for any project, big or small. He is FANTASTIC!',
     rating: 5,
   },
   {
-    name: 'Robert T.',
-    location: 'Simpsonville, SC',
-    text: 'Finally found a reliable lawn care service. They show up on time every week and my lawn has never looked better. Highly recommend!',
+    name: 'Adam Carroll',
+    location: 'Anderson, SC',
+    text: 'Jeremy and his crew did a great job at our primary residence and rental property. They tackled some big projects for us. Were professional and hard working and did a great job communicating. Would definitely use them again!',
     rating: 5,
   },
   {
-    name: 'Jennifer K.',
-    location: 'Greer, SC',
-    text: 'Love supporting a veteran-owned business, especially one that does such great work. Professional, courteous, and affordable.',
+    name: 'Kimmy CeeAhh',
+    location: 'Anderson, SC',
+    text: "Husband & I purchased a home, but don't have a lawnmower yet. I called Jeremy with Mission Lawn Care & set up a trimming every other week. He does a wonderful job at a very reasonable price. And he leaves our driveway neat & clean once he's done. I'd recommend him to anyone that needs lawn care.",
     rating: 5,
   },
 ];
@@ -49,7 +49,7 @@ const itemVariants = {
 export default function Testimonials() {
   return (
     <section className="section-padding bg-background grass-overlay">
-      <div className="container-custom">
+      <div className="max-w-[1400px] mx-auto px-4">
         {/* Section Header */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}

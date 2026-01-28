@@ -11,14 +11,14 @@ const galleryImages = [
     category: 'Lawns',
   },
   {
-    src: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=80',
-    alt: 'Professional lawn edging',
-    category: 'Edging',
+    src: '/images/planting-plants.png',
+    alt: 'Flower bed installation',
+    category: 'Landscaping',
   },
   {
-    src: 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?auto=format&fit=crop&w=800&q=80',
-    alt: 'Lawn mowing service',
-    category: 'Mowing',
+    src: '/images/weed-trimming.jpeg',
+    alt: 'Weed trimming service',
+    category: 'Trimming',
   },
   {
     src: 'https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=800&q=80',
@@ -26,7 +26,7 @@ const galleryImages = [
     category: 'Cleanup',
   },
   {
-    src: 'https://images.unsplash.com/photo-1499309021210-bafca02fa8e1?auto=format&fit=crop&w=800&q=80',
+    src: '/images/sod-install.png',
     alt: 'Residential lawn care',
     category: 'Lawns',
   },
