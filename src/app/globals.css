@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --lawn-green: #2D5A27;
+  --patriot-red: #B22234;
+  --navy-blue: #1E3A5F;
+  --background: #F8F9FA;
+  --text-primary: #1F2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+/* Custom Selection Color */
+::selection {
+  background-color: var(--lawn-green);
+  color: white;
+}
+
+/* Smooth scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e7eb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--lawn-green);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--navy-blue);
+}
+
+/* Phone number styling */
+.phone-link {
+  @apply text-lawn-green font-bold hover:text-patriot-red transition-colors duration-300;
+}
+
+/* Button base styles */
+.btn-primary {
+  @apply bg-lawn-green text-white font-display font-semibold uppercase tracking-wider px-8 py-4 rounded-lg
+         hover:bg-lawn-green-dark transform hover:scale-105 transition-all duration-300
+         shadow-lg hover:shadow-xl active:scale-95;
+}
+
+.btn-secondary {
+  @apply bg-patriot-red text-white font-display font-semibold uppercase tracking-wider px-8 py-4 rounded-lg
+         hover:bg-patriot-red-dark transform hover:scale-105 transition-all duration-300
+         shadow-lg hover:shadow-xl active:scale-95;
+}
+
+.btn-outline {
+  @apply border-2 border-lawn-green text-lawn-green font-display font-semibold uppercase tracking-wider px-8 py-4 rounded-lg
+         hover:bg-lawn-green hover:text-white transform hover:scale-105 transition-all duration-300;
+}
+
+/* Section padding */
+.section-padding {
+  @apply py-16 md:py-24 px-4 md:px-8;
+}
+
+/* Container max width */
+.container-custom {
+  @apply max-w-7xl mx-auto;
+}
+
+/* Heading styles */
+.heading-primary {
+  @apply font-display text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary uppercase tracking-tight;
+}
+
+.heading-secondary {
+  @apply font-display text-3xl md:text-4xl font-bold text-text-primary uppercase tracking-tight;
+}
+
+.heading-tertiary {
+  @apply font-display text-2xl md:text-3xl font-semibold text-text-primary uppercase tracking-tight;
+}
+
+/* Decorative line */
+.accent-line {
+  @apply h-1 w-20 bg-patriot-red rounded-full;
+}
+
+/* Card hover effect */
+.card-hover {
+  @apply transition-all duration-500 hover:shadow-2xl hover:-translate-y-2;
+}
+
+/* Grass texture overlay */
+.grass-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232D5A27' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Form input styles */
+.form-input {
+  @apply w-full px-4 py-3 border-2 border-gray-200 rounded-lg font-body text-text-primary
+         focus:border-lawn-green focus:ring-2 focus:ring-lawn-green/20 focus:outline-none
+         transition-all duration-300 bg-white;
+}
+
+.form-label {
+  @apply block text-sm font-semibold text-text-primary mb-2 font-body uppercase tracking-wide;
+}
+
+/* Floating call button for mobile */
+.floating-call-btn {
+  @apply fixed bottom-6 right-6 z-50 bg-patriot-red text-white p-4 rounded-full shadow-2xl
+         hover:bg-patriot-red-dark transform hover:scale-110 transition-all duration-300
+         md:hidden;
+}
+
+/* Veteran badge */
+.veteran-badge {
+  @apply inline-flex items-center gap-2 bg-navy-blue text-white px-4 py-2 rounded-full
+         text-sm font-semibold uppercase tracking-wider;
+}
+
+/* American flag stripe animation */
+@keyframes stripe-wave {
+  0%, 100% { transform: skewX(-5deg); }
+  50% { transform: skewX(5deg); }
+}
+
+.flag-stripes {
+  background: repeating-linear-gradient(
+    0deg,
+    var(--patriot-red) 0px,
+    var(--patriot-red) 10px,
+    white 10px,
+    white 20px
+  );
+}
+
+/* Testimonial card */
+.testimonial-card {
+  @apply bg-white rounded-2xl p-8 shadow-lg relative;
+}
+
+.testimonial-card::before {
+  content: '"';
+  @apply absolute -top-4 left-6 text-8xl text-lawn-green/20 font-display leading-none;
+}
+
+/* Image hover zoom */
+.img-zoom {
+  @apply overflow-hidden;
+}
+
+.img-zoom img {
+  @apply transition-transform duration-700 hover:scale-110;
+}
