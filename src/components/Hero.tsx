@@ -21,25 +21,27 @@ export default function Hero() {
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Diagonal stripes */}
-        <div className="absolute -right-20 top-0 w-96 h-full bg-patriot-red/10 transform skew-x-12" />
-        <div className="absolute -right-40 top-0 w-96 h-full bg-white/5 transform skew-x-12" />
+        <div className="hidden md:block absolute -right-20 top-0 w-96 h-full bg-patriot-red/10 transform skew-x-12" />
+        <div className="hidden md:block absolute -right-40 top-0 w-96 h-full bg-white/5 transform skew-x-12" />
         
-        {/* Floating dots */}
-        <motion.div 
-          className="absolute top-20 left-[10%] w-4 h-4 bg-patriot-red rounded-full"
-          animate={{ y: [0, -20, 0] }}
-          transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div 
-          className="absolute top-40 right-[20%] w-6 h-6 bg-white/20 rounded-full"
-          animate={{ y: [0, 20, 0] }}
-          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div 
-          className="absolute bottom-32 left-[25%] w-3 h-3 bg-brand-blue-light/50 rounded-full"
-          animate={{ y: [0, -15, 0] }}
-          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-        />
+        {/* Floating dots - hidden on mobile */}
+        <div className="hidden md:block">
+          <motion.div
+            className="absolute top-20 left-[10%] w-4 h-4 bg-patriot-red rounded-full"
+            animate={{ y: [0, -20, 0] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          />
+          <motion.div
+            className="absolute top-40 right-[20%] w-6 h-6 bg-white/20 rounded-full"
+            animate={{ y: [0, 20, 0] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+          />
+          <motion.div
+            className="absolute bottom-32 left-[25%] w-3 h-3 bg-brand-blue-light/50 rounded-full"
+            animate={{ y: [0, -15, 0] }}
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+          />
+        </div>
       </div>
 
       {/* Content */}
@@ -84,12 +86,12 @@ export default function Hero() {
             <span className="font-semibold text-white"> dedication</span> to every yard we service.
           </motion.p>
 
-          {/* Trust Indicators */}
+          {/* Trust Indicators - hidden on mobile */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="flex flex-wrap gap-6 mb-10"
+            className="hidden sm:flex flex-wrap gap-6 mb-10"
           >
             {[
               { icon: Star, text: 'Quality Guaranteed' },
@@ -125,12 +127,12 @@ export default function Hero() {
             </Link>
           </motion.div>
 
-          {/* Service Area Tag */}
+          {/* Service Area Tag - hidden on mobile */}
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.8 }}
-            className="mt-8 text-white/60 text-sm font-body"
+            className="hidden sm:block mt-8 text-white/60 text-sm font-body"
           >
             Proudly serving the Anderson, SC area and all of Upstate South Carolina
           </motion.p>
