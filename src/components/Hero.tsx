@@ -118,7 +118,7 @@ export default function Hero() {
             </a>
             <Link
               href="#contact"
-              className="btn-outline border-white text-white hover:bg-white hover:text-brand-blue inline-flex items-center justify-center gap-2 text-lg"
+              className="border-2 border-white text-white font-display font-semibold uppercase tracking-wider px-8 py-4 rounded-lg hover:bg-white hover:text-brand-blue transform hover:scale-105 transition-all duration-300 inline-flex items-center justify-center gap-2 text-lg"
             >
               Contact Us
               <ArrowRight size={20} />
