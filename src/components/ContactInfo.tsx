@@ -74,7 +74,7 @@ export default function ContactInfo() {
 
       {/* Decorative Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-orange/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-lawn-green/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
       <div className="container-custom relative z-10">
         {/* Section Header */}
@@ -89,9 +89,9 @@ export default function ContactInfo() {
             Get In Touch
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white uppercase tracking-tight mb-4">
-            Contact <span className="text-accent-orange">Us</span>
+            Contact <span className="text-lawn-green">Us</span>
           </h2>
-          <div className="h-1 w-20 bg-accent-orange rounded-full mx-auto mb-6" />
+          <div className="h-1 w-20 bg-lawn-green rounded-full mx-auto mb-6" />
           <p className="text-white/90 text-lg max-w-2xl mx-auto font-body">
             Ready to transform your lawn? Reach out to us today for a free estimate. 
             We proudly serve the Greenville, SC area and all of Upstate South Carolina.
@@ -117,7 +117,7 @@ export default function ContactInfo() {
                   href={card.href}
                   className="block bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center"
                 >
-                  <div className="w-16 h-16 bg-accent-orange rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-lawn-green rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
                     <card.icon size={32} className="text-white" />
                   </div>
                   <h3 className="font-display text-xl font-bold text-text-primary uppercase tracking-tight mb-2">
@@ -132,7 +132,7 @@ export default function ContactInfo() {
                 </a>
               ) : (
                 <div className="bg-white rounded-2xl p-8 shadow-lg text-center h-full">
-                  <div className="w-16 h-16 bg-accent-orange rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                  <div className="w-16 h-16 bg-lawn-green rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                     <card.icon size={32} className="text-white" />
                   </div>
                   <h3 className="font-display text-xl font-bold text-text-primary uppercase tracking-tight mb-2">
@@ -161,7 +161,7 @@ export default function ContactInfo() {
           {/* Business Hours */}
           <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-accent-orange rounded-xl flex items-center justify-center">
+              <div className="w-12 h-12 bg-lawn-green rounded-xl flex items-center justify-center">
                 <Clock size={24} className="text-white" />
               </div>
               <h3 className="font-display text-2xl font-bold text-white uppercase tracking-tight">
@@ -199,8 +199,8 @@ export default function ContactInfo() {
                   key={item.text}
                   className="flex items-center gap-3 bg-white/5 rounded-xl p-4"
                 >
-                  <div className="w-10 h-10 bg-accent-orange/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <item.icon size={20} className="text-accent-orange" />
+                  <div className="w-10 h-10 bg-lawn-green/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <item.icon size={20} className="text-lawn-green" />
                   </div>
                   <span className="text-white font-semibold text-sm">{item.text}</span>
                 </div>

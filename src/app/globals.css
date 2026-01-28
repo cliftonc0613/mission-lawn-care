@@ -11,7 +11,7 @@
   --lawn-green: #7db02a;
   --patriot-red: #B22234;
   --navy-blue: #1E5A8A;
-  --accent-orange: #E07B3A;
+  --accent-orange: #7db02a; /* Now using green */
   --background: #F8F9FA;
   --text-primary: #1F2937;
 }

@@ -51,7 +51,7 @@ export default function Footer() {
                     href={link.href}
                     className="text-gray-300 hover:text-brand-blue-light transition-colors font-body flex items-center gap-2 group"
                   >
-                    <span className="w-2 h-2 bg-accent-orange rounded-full group-hover:bg-brand-blue transition-colors" />
+                    <span className="w-2 h-2 bg-lawn-green rounded-full group-hover:bg-brand-blue transition-colors" />
                     {link.label}
                   </Link>
                 </li>
