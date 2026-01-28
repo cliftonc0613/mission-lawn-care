@@ -14,15 +14,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Logo & About */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center mb-6">
-              <div className="relative w-24 h-24 bg-white rounded-lg p-2">
-                <Image
-                  src="/images/mission-lawn-care-logo.png"
-                  alt="Mission Lawn Care"
-                  fill
-                  className="object-contain p-1"
-                />
-              </div>
+            <Link href="/" className="inline-block mb-6">
+              <Image
+                src="/images/mission-lawn-care-logo.png"
+                alt="Mission Lawn Care"
+                width={250}
+                height={100}
+                className="h-[65px] w-auto"
+              />
             </Link>
             <p className="text-gray-300 mb-4 font-body">
               Veteran-owned lawn care service dedicated to serving the Greenville, SC area with 
