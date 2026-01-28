@@ -14,9 +14,9 @@ const contactCards = [
   {
     icon: Mail,
     title: 'Email Us',
-    primary: 'info@missionlawncare.com',
+    primary: 'missionlawncare@yahoo.com',
     secondary: 'We reply within 24 hours',
-    href: 'mailto:info@missionlawncare.com',
+    href: 'mailto:missionlawncare@yahoo.com',
   },
   {
     icon: MapPin,

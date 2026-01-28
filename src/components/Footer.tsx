@@ -102,7 +102,7 @@ export default function Footer() {
               </li>
               <li>
                 <a 
-                  href="mailto:info@missionlawncare.com"
+                  href="mailto:missionlawncare@yahoo.com"
                   className="flex items-center gap-3 text-gray-300 hover:text-brand-blue-light transition-colors group"
                 >
                   <div className="w-10 h-10 bg-brand-blue/20 rounded-lg flex items-center justify-center group-hover:bg-brand-blue/40 transition-colors">
@@ -110,7 +110,7 @@ export default function Footer() {
                   </div>
                   <div>
                     <span className="text-xs uppercase tracking-wider text-gray-400">Email</span>
-                    <p className="font-semibold text-sm">info@missionlawncare.com</p>
+                    <p className="font-semibold text-sm">missionlawncare@yahoo.com</p>
                   </div>
                 </a>
               </li>
