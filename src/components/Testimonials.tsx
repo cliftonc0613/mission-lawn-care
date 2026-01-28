@@ -49,7 +49,7 @@ const itemVariants = {
 export default function Testimonials() {
   return (
     <section className="section-padding bg-background grass-overlay">
-      <div className="container-custom">
+      <div className="max-w-[1400px] mx-auto px-4">
         {/* Section Header */}
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
