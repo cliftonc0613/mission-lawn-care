@@ -136,8 +136,8 @@ export default function WhyChooseUs() {
             { number: '24hr', label: 'Response Time' },
             { number: 'Free', label: 'Estimates' },
             { number: 'Local', label: 'Owned' },
-          ].map((stat, index) => (
-            <div key={index} className="text-center">
+          ].map((stat) => (
+            <div key={stat.label} className="text-center">
               <p className="font-display text-4xl md:text-5xl font-bold text-brand-blue-light mb-2">
                 {stat.number}
               </p>

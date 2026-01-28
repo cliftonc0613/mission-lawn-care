@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Shield, Target, Users, MapPin, Heart, Star, Phone, ArrowRight } from 'lucide-react';
+import { Shield, Target, Users, MapPin, Heart, Phone, ArrowRight } from 'lucide-react';
 
 const values = [
   {
