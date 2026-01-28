@@ -60,7 +60,7 @@ export default function Header() {
           <div className="flex items-center justify-between py-3 px-4">
             {/* Logo */}
             <Link href="/" className="flex items-center">
-              <div className="relative w-24 h-24 md:w-32 md:h-32">
+              <div className="relative h-[100px] max-w-[250px] w-auto aspect-auto" style={{ minWidth: '100px' }}>
                 <Image
                   src="/images/mission-lawn-care-logo.png"
                   alt="Mission Lawn Care"
