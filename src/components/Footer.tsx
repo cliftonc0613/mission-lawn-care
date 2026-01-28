@@ -20,7 +20,7 @@ export default function Footer() {
                 alt="Mission Lawn Care"
                 width={250}
                 height={100}
-                className="h-[65px] w-auto"
+                className="w-full h-auto"
               />
             </Link>
             <p className="text-gray-300 mb-4 font-body">
