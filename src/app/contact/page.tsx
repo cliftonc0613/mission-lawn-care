@@ -58,13 +58,13 @@ const subjects = [
 
 const serviceAreas = [
   { name: 'Anderson', distance: null, isPrimary: true },
-  { name: 'Pendleton', distance: '8 miles' },
+  { name: 'Greenville', distance: '30 miles' },
   { name: 'Clemson', distance: '12 miles' },
   { name: 'Seneca', distance: '18 miles' },
   { name: 'Easley', distance: '15 miles' },
-  { name: 'Williamston', distance: '10 miles' },
+  { name: 'Pendleton', distance: '8 miles' },
   { name: 'Belton', distance: '8 miles' },
-  { name: 'Honea Path', distance: '15 miles' },
+  { name: 'Williamston', distance: '10 miles' },
 ];
 
 export default function ContactPage() {
