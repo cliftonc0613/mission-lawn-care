@@ -26,7 +26,7 @@ const galleryImages = [
     category: 'Cleanup',
   },
   {
-    src: 'https://images.unsplash.com/photo-1499309021210-bafca02fa8e1?auto=format&fit=crop&w=800&q=80',
+    src: '/images/sod-install.png',
     alt: 'Residential lawn care',
     category: 'Lawns',
   },
