@@ -323,7 +323,7 @@ export default function ContactPage() {
               <div className="accent-line mb-8" />
 
               {/* Map */}
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg mb-8 bg-gray-200">
+              <div className="aspect-video rounded-2xl overflow-hidden shadow-lg mb-8 bg-gray-200">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104872.59374982098!2d-82.7483771!3d34.5034394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88585e3d2ab1b4db%3A0xadb63e84be723e0c!2sAnderson%2C%20SC!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                   width="100%"
