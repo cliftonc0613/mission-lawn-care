@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Loader2, ExternalLink } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Loader2, ExternalLink, Navigation } from 'lucide-react';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -54,6 +54,17 @@ const subjects = [
   'Schedule Service',
   'Feedback',
   'Other',
+];
+
+const serviceAreas = [
+  { name: 'Anderson', distance: null, isPrimary: true },
+  { name: 'Pendleton', distance: '8 miles' },
+  { name: 'Clemson', distance: '12 miles' },
+  { name: 'Seneca', distance: '18 miles' },
+  { name: 'Easley', distance: '15 miles' },
+  { name: 'Williamston', distance: '10 miles' },
+  { name: 'Belton', distance: '8 miles' },
+  { name: 'Honea Path', distance: '15 miles' },
 ];
 
 export default function ContactPage() {
@@ -369,6 +380,61 @@ export default function ContactPage() {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Service Areas Section */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="heading-secondary mb-4">
+              Service <span className="text-lawn-green">Areas</span>
+            </h2>
+            <div className="accent-line mx-auto mb-6" />
+            <p className="text-text-secondary text-lg max-w-3xl mx-auto font-body">
+              Proudly serving Anderson, SC and the greater Upstate region with professional lawn care services.
+              We cover all surrounding communities within a 30-mile radius of Anderson.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="grid grid-cols-2 md:grid-cols-4 gap-4"
+          >
+            {serviceAreas.map((area, index) => (
+              <div
+                key={area.name}
+                className={`rounded-xl p-6 text-center transition-all duration-300 hover:shadow-lg ${
+                  area.isPrimary
+                    ? 'bg-lawn-green/10 border-2 border-lawn-green'
+                    : 'bg-gray-50 border border-gray-200 hover:border-lawn-green/50'
+                }`}
+              >
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-3 ${
+                  area.isPrimary ? 'bg-lawn-green' : 'bg-gray-200'
+                }`}>
+                  <Navigation size={18} className={area.isPrimary ? 'text-white' : 'text-navy-blue'} />
+                </div>
+                <h3 className={`font-display font-bold uppercase tracking-tight mb-1 ${
+                  area.isPrimary ? 'text-lawn-green text-lg' : 'text-navy-blue'
+                }`}>
+                  {area.name}
+                </h3>
+                <p className={`text-sm ${area.isPrimary ? 'text-lawn-green-dark font-medium' : 'text-text-secondary'}`}>
+                  {area.isPrimary ? 'Primary Service Area' : area.distance}
+                </p>
+              </div>
+            ))}
+          </motion.div>
         </div>
       </section>
     </>
