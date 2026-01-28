@@ -59,16 +59,15 @@ export default function Header() {
         <div className="container-custom">
           <div className="flex items-center justify-between py-3 px-4">
             {/* Logo */}
-            <Link href="/" className="flex items-center">
-              <div className="relative h-[100px] max-w-[250px] w-auto aspect-auto" style={{ minWidth: '100px' }}>
-                <Image
-                  src="/images/mission-lawn-care-logo.png"
-                  alt="Mission Lawn Care"
-                  fill
-                  className="object-contain"
-                  priority
-                />
-              </div>
+            <Link href="/" className="shrink-0">
+              <Image
+                src="/images/mission-lawn-care-logo.png"
+                alt="Mission Lawn Care"
+                width={250}
+                height={100}
+                className="h-[100px] w-auto"
+                priority
+              />
             </Link>
 
             {/* Desktop Navigation */}
