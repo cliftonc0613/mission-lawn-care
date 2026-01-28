@@ -16,9 +16,9 @@ const galleryImages = [
     category: 'Edging',
   },
   {
-    src: 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?auto=format&fit=crop&w=800&q=80',
-    alt: 'Lawn mowing service',
-    category: 'Mowing',
+    src: '/images/weed-trimming.jpeg',
+    alt: 'Weed trimming service',
+    category: 'Trimming',
   },
   {
     src: 'https://images.unsplash.com/photo-1598902108854-10e335adac99?auto=format&fit=crop&w=800&q=80',
