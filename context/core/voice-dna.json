@@ -1,0 +1,124 @@
+{
+  "_instructions": "Define your brand voice and communication style. This helps Claude write content that sounds authentically like your business.",
+  "_metadata": {
+    "created": "2026-01-27",
+    "project": "Mission Lawn Care",
+    "version": "1.0"
+  },
+  "personality": {
+    "traits": [
+      "Friendly and approachable",
+      "Professional and confident",
+      "Down-to-earth and honest",
+      "Enthusiastic and helpful"
+    ],
+    "tone": "Warm, welcoming, and knowledgeable - like a trusted neighbor who happens to be an expert",
+    "formality": "Semi-formal - friendly but professional",
+    "humor": "Light and appropriate - occasional warmth but not forced"
+  },
+  "communication": {
+    "style": "Direct, clear, and genuine - no fluff or overselling",
+    "perspective": "Third person - Mission Lawn Care",
+    "preferredPronouns": "Mission Lawn Care, the team, our crew",
+    "sentenceStructure": "Clear and concise - easy to understand, action-oriented"
+  },
+  "vocabulary": {
+    "preferredTerms": [
+      "Property",
+      "Lawn care",
+      "Landscaping",
+      "Curb appeal",
+      "Maintenance",
+      "Service"
+    ],
+    "avoidedTerms": [
+      "Cheap",
+      "Discount",
+      "Quick fix",
+      "Best in town",
+      "Guaranteed results"
+    ],
+    "industryJargon": [
+      "Aeration",
+      "Fertilization",
+      "Edging",
+      "Hardscaping",
+      "Weed control",
+      "Overseeding"
+    ],
+    "brandTerminology": [
+      "Service with honor",
+      "Your trusted neighbor",
+      "Quality you can count on",
+      "Mission accomplished",
+      "Veteran-owned"
+    ]
+  },
+  "values": {
+    "coreBeliefs": [
+      "Hard work and discipline lead to quality results",
+      "Every property deserves professional care",
+      "Honesty builds lasting relationships",
+      "Supporting our community makes us stronger"
+    ],
+    "principles": [
+      "Show up on time, every time",
+      "Do what you say you'll do",
+      "Treat every property like our own",
+      "Be transparent about pricing and services"
+    ],
+    "whatWeCareAbout": [
+      "Customer satisfaction",
+      "Quality workmanship",
+      "Community connections",
+      "Environmental responsibility",
+      "Veteran values"
+    ]
+  },
+  "storytelling": {
+    "narrativeApproach": "Customer-focused - highlight how Mission Lawn Care makes their lives easier and their properties more beautiful",
+    "commonThemes": [
+      "Veteran discipline and dedication",
+      "Community service and local pride",
+      "Reliability and trustworthiness",
+      "Pride in property ownership",
+      "Work-life balance (we handle the lawn, you enjoy your time)"
+    ],
+    "emotionalTone": "Trustworthy and reassuring - customers feel confident their property is in good hands"
+  },
+  "audienceConnection": {
+    "howWeAddress": "Customers as valued neighbors and community members",
+    "relationshipStyle": "Professional yet personal - Mission Lawn Care knows your name and your property",
+    "callsToAction": [
+      "Get a free quote",
+      "Schedule your service",
+      "Contact Mission Lawn Care today",
+      "Let us take care of your lawn",
+      "See the Mission difference"
+    ]
+  },
+  "examples": {
+    "typicalPhrases": [
+      "Mission Lawn Care is proud to serve the Anderson community.",
+      "Your lawn is in good hands with Mission Lawn Care.",
+      "Professional service, every time.",
+      "Let Mission Lawn Care handle the hard work."
+    ],
+    "sampleMessages": [
+      "Mission Lawn Care brings veteran discipline and neighborly service to every property in Anderson, SC. From regular lawn maintenance to complete landscaping transformations, your property will look its best.",
+      "Ready to enjoy your weekends again? Mission Lawn Care takes the work out of lawn care so you can spend time on what matters most."
+    ],
+    "doSay": [
+      "We appreciate your trust in Mission Lawn Care",
+      "Your satisfaction is our priority",
+      "Quality service you can depend on",
+      "Proud to serve our Anderson neighbors"
+    ],
+    "dontSay": [
+      "We're the best/cheapest/fastest",
+      "Nobody does it better",
+      "You won't find a better deal",
+      "Guaranteed perfect results"
+    ]
+  }
+}

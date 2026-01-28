@@ -1,0 +1,102 @@
+{
+  "_instructions": "Fill out this business profile to help Claude understand your company. This enables personalized recommendations, content creation, and strategic guidance.",
+  "_metadata": {
+    "created": "2026-01-27",
+    "project": "Mission Lawn Care",
+    "version": "1.0"
+  },
+  "company": {
+    "name": "Mission Lawn Care",
+    "tagline": "Professional lawn care services",
+    "description": "A veteran-owned lawn care and landscaping service company providing professional lawn maintenance, landscaping, lawn treatment, and tree care services to residential homeowners, commercial properties, HOAs, and property managers in the Anderson, SC area.",
+    "founded": "",
+    "location": {
+      "city": "Anderson",
+      "state": "SC",
+      "serviceArea": ["Anderson", "Anderson County", "Upstate South Carolina"]
+    }
+  },
+  "positioning": {
+    "uniqueValueProposition": "Veteran-owned lawn care company delivering reliable, quality service with integrity to the Anderson, SC community",
+    "differentiators": [
+      "Veteran-owned and operated",
+      "Reliability and consistency - always on time, consistent quality",
+      "Local and family-owned - community-focused, personal service",
+      "Eco-friendly practices - sustainable methods and products",
+      "Competitive pricing - best value for quality service"
+    ],
+    "targetMarket": "Residential homeowners, commercial properties, HOAs, and property managers in Anderson, SC and surrounding areas",
+    "competitiveAdvantages": [
+      "Veteran discipline and work ethic",
+      "Strong community ties",
+      "Personalized customer service",
+      "Environmentally responsible practices",
+      "Competitive local pricing"
+    ]
+  },
+  "offerings": {
+    "services": [
+      "Lawn mowing and maintenance - regular mowing, edging, trimming",
+      "Landscaping and design - planting, hardscaping, design services",
+      "Lawn treatment and fertilization - weed control, fertilizing, aeration",
+      "Tree and shrub care - pruning, trimming, removal"
+    ],
+    "packages": [],
+    "pricing": {
+      "model": "Per service quotes - custom pricing based on property size",
+      "range": ""
+    }
+  },
+  "audience": {
+    "primaryCustomer": "Residential homeowners in Anderson, SC",
+    "customerSegments": [
+      "Residential homeowners - single-family homes",
+      "Commercial properties - businesses, offices, retail locations",
+      "HOAs - community-wide lawn care contracts",
+      "Property managers - multi-property accounts"
+    ],
+    "painPoints": [
+      "Lack of time for lawn maintenance",
+      "Inconsistent or unreliable service from other providers",
+      "Overgrown or neglected lawns affecting curb appeal",
+      "Need for professional landscaping expertise",
+      "Desire for eco-friendly lawn care options"
+    ],
+    "desiredOutcomes": [
+      "Beautiful, well-maintained lawn and landscape",
+      "Reliable, consistent service they can count on",
+      "Enhanced property curb appeal and value",
+      "Peace of mind knowing their property is cared for",
+      "Fair pricing with transparent communication"
+    ]
+  },
+  "operations": {
+    "teamSize": "",
+    "serviceCapacity": "",
+    "seasonality": "Peak season spring through fall; reduced services in winter",
+    "technology": []
+  },
+  "brand": {
+    "mission": "To provide professional, reliable lawn care services with the discipline and integrity that comes from military service, while supporting our local Anderson community.",
+    "vision": "To be the most trusted lawn care provider in the Anderson, SC area, known for quality workmanship and exceptional customer service.",
+    "values": [
+      "Quality workmanship - excellence in every job",
+      "Customer satisfaction - going above and beyond",
+      "Integrity and honesty - transparent pricing, reliable service",
+      "Community focus - supporting local neighbors",
+      "Veteran-owned pride - discipline, honor, and service"
+    ],
+    "personality": [
+      "Professional",
+      "Reliable",
+      "Trustworthy",
+      "Community-oriented",
+      "Hardworking"
+    ]
+  },
+  "goals": {
+    "shortTerm": [],
+    "longTerm": [],
+    "kpis": []
+  }
+}

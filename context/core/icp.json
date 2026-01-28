@@ -1,0 +1,176 @@
+{
+  "_instructions": "Define your ideal client profile (ICP). This helps Claude understand who you're trying to reach and how to communicate with them effectively.",
+  "_metadata": {
+    "created": "2026-01-27",
+    "project": "Mission Lawn Care",
+    "version": "1.0"
+  },
+  "demographics": {
+    "ageRange": "All ages - from young professionals to retirees",
+    "gender": "All genders",
+    "income": "Mixed income levels - serve all economic brackets",
+    "location": "Anderson, SC and surrounding Anderson County areas",
+    "homeOwnership": "Homeowners primarily, also commercial property owners and managers",
+    "propertyType": "Single-family homes, commercial properties, HOA communities, multi-unit properties",
+    "propertySize": "Varies - from small residential lots to larger commercial properties"
+  },
+  "psychographics": {
+    "lifestyle": "Busy individuals who value their time and want to enjoy their property without the work",
+    "values": [
+      "Quality and reliability",
+      "Supporting local businesses",
+      "Community involvement",
+      "Work-life balance",
+      "Pride in property appearance"
+    ],
+    "interests": [
+      "Home improvement",
+      "Outdoor entertaining",
+      "Community events",
+      "Family activities",
+      "Real estate value"
+    ],
+    "priorities": [
+      "Family and personal time",
+      "Career and work responsibilities",
+      "Property maintenance without hassle",
+      "Value for money spent"
+    ]
+  },
+  "painPoints": {
+    "primary": [
+      "No time for lawn work - busy with work, family, and life",
+      "Physical limitations - age, health, or mobility issues",
+      "Lack of knowledge or equipment - don't know how to maintain lawn properly",
+      "Unreliable past providers - been burned by no-shows or poor quality"
+    ],
+    "secondary": [
+      "Lawn looking worse than neighbors",
+      "HOA complaints or notices",
+      "Embarrassment when hosting guests",
+      "Not knowing who to trust for lawn care"
+    ],
+    "frustrations": [
+      "Companies that don't show up on time",
+      "Inconsistent quality of work",
+      "Hidden fees or surprise charges",
+      "Poor communication from service providers",
+      "Having to redo work themselves"
+    ],
+    "fears": [
+      "Wasting money on poor service",
+      "Property value decreasing due to neglect",
+      "Being locked into bad contracts",
+      "Damaging their lawn by attempting DIY care"
+    ]
+  },
+  "goals": {
+    "desires": [
+      "Beautiful curb appeal - pride in how their property looks",
+      "Free time and peace of mind - one less thing to worry about",
+      "Property value protection - maintain or increase home value",
+      "Neighbor approval - keep up with community standards"
+    ],
+    "aspirations": [
+      "Having the best-looking lawn on the block",
+      "More time with family instead of yard work",
+      "A property they're proud to show off",
+      "Stress-free homeownership"
+    ],
+    "successLooksLike": "A consistently well-maintained property with reliable service that requires no thought or effort on their part"
+  },
+  "budget": {
+    "range": "Varies by service - from basic maintenance to full landscaping packages",
+    "paymentPreferences": [
+      "Per-service payment",
+      "Monthly billing for recurring services",
+      "Credit/debit cards",
+      "Cash or check"
+    ],
+    "pricesSensitivity": "Mixed - some customers prioritize value, others prioritize lowest price"
+  },
+  "decisionMaking": {
+    "triggers": [
+      "Just moved to the area - new homeowners need services",
+      "Frustrated with current provider - looking to switch",
+      "Life change (baby, new job, health issue) - time becomes more valuable",
+      "Property getting neglected - visible lawn problems developing"
+    ],
+    "barriers": [
+      "Uncertainty about pricing",
+      "Fear of being locked into contracts",
+      "Not knowing if company is trustworthy",
+      "Previous bad experiences with lawn care companies"
+    ],
+    "influencers": [
+      "Neighbor recommendations",
+      "Online reviews",
+      "Word of mouth from friends and family",
+      "Visible work in the neighborhood"
+    ],
+    "timeline": "Often seasonal - spring is peak decision time, but needs arise year-round"
+  },
+  "preferences": {
+    "communicationChannels": [
+      "Phone calls",
+      "Text messages",
+      "Email",
+      "In-person for estimates"
+    ],
+    "contentFormats": [
+      "Before/after photos",
+      "Customer testimonials",
+      "Clear pricing information",
+      "Local community content"
+    ],
+    "bestTimeToReach": "Evenings and weekends for residential, business hours for commercial"
+  },
+  "buyingSignals": {
+    "readyToBuy": [
+      "Just moved to the area",
+      "Complaining about current provider",
+      "Life change making them busier",
+      "Property visibly declining",
+      "Asking for quotes or pricing",
+      "Mentioned by neighbor who uses Mission Lawn Care"
+    ],
+    "notReady": [
+      "Just signed contract with another company",
+      "Enjoys doing their own yard work",
+      "Rental property with landlord handling maintenance",
+      "Budget constraints"
+    ],
+    "qualificationCriteria": [
+      "Property within service area (Anderson, SC and surrounding areas)",
+      "Has a lawn or landscape needing maintenance",
+      "Able to pay for services",
+      "Looking for reliable, quality service"
+    ]
+  },
+  "personas": [
+    {
+      "name": "Busy Professional Brian",
+      "description": "35-year-old professional who works long hours. Values his weekends for family time, not yard work. Recently bought his first home in Anderson.",
+      "quote": "I'd rather pay someone reliable to handle my lawn so I can spend Saturdays with my kids instead of pushing a mower.",
+      "scenario": "Brian searches online for 'lawn care Anderson SC' after realizing his new home's lawn is getting out of control and his weekends are too short."
+    },
+    {
+      "name": "Retired Robert",
+      "description": "68-year-old retiree who loves his home but can no longer do the physical work. Served in the military and appreciates veteran-owned businesses.",
+      "quote": "My back just can't handle the mowing anymore, but I want my lawn to look as good as when I did it myself.",
+      "scenario": "Robert's doctor told him to stop heavy yard work. He asks his neighbor who does their lawn and they recommend Mission Lawn Care."
+    },
+    {
+      "name": "Property Manager Patricia",
+      "description": "Commercial property manager overseeing multiple properties in the Anderson area. Needs consistent, reliable service for all her accounts.",
+      "quote": "I need one company I can trust to handle all my properties without me having to micromanage.",
+      "scenario": "Patricia's current lawn company missed two appointments in a month. She's looking for a more reliable alternative for her 12 commercial properties."
+    },
+    {
+      "name": "New Homeowner Nancy",
+      "description": "42-year-old who just relocated to Anderson for work. Doesn't know any local service providers and wants to find someone trustworthy.",
+      "quote": "I don't know anyone here yet. I just need to find good, honest people to help with home services.",
+      "scenario": "Nancy moved from out of state and is searching for local lawn care services with good reviews and a trustworthy reputation."
+    }
+  ]
+}
