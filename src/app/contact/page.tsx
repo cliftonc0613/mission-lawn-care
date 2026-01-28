@@ -410,7 +410,7 @@ export default function ContactPage() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="grid grid-cols-2 md:grid-cols-4 gap-4"
           >
-            {serviceAreas.map((area, index) => (
+            {serviceAreas.map((area) => (
               <div
                 key={area.name}
                 className={`rounded-xl p-6 text-center transition-all duration-300 hover:shadow-lg ${
