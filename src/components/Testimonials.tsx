@@ -5,21 +5,9 @@ import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'Sarah M.',
+    name: 'Alyssa Miller',
     location: 'Anderson, SC',
-    text: 'Mission Lawn Care transformed our yard! Their attention to detail is unmatched. You can really see the military precision in their work.',
-    rating: 5,
-  },
-  {
-    name: 'Robert T.',
-    location: 'Simpsonville, SC',
-    text: 'Finally found a reliable lawn care service. They show up on time every week and my lawn has never looked better. Highly recommend!',
-    rating: 5,
-  },
-  {
-    name: 'Jennifer K.',
-    location: 'Greer, SC',
-    text: 'Love supporting a veteran-owned business, especially one that does such great work. Professional, courteous, and affordable.',
+    text: 'Jeremy did an INCREDIBLE job. We recently moved into a home that was in really rough shape; Jeremy completely transformed the yard, bushes, and overall appearance of the home. He listened to me when I asked for something and ensured I was happy before the job was complete. I would 1000% recommend him for any project, big or small. He is FANTASTIC!',
     rating: 5,
   },
 ];
@@ -77,7 +65,7 @@ export default function Testimonials() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          className="max-w-2xl mx-auto"
         >
           {testimonials.map((testimonial, index) => (
             <motion.div
