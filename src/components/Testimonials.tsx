@@ -10,6 +10,18 @@ const testimonials = [
     text: 'Jeremy did an INCREDIBLE job. We recently moved into a home that was in really rough shape; Jeremy completely transformed the yard, bushes, and overall appearance of the home. He listened to me when I asked for something and ensured I was happy before the job was complete. I would 1000% recommend him for any project, big or small. He is FANTASTIC!',
     rating: 5,
   },
+  {
+    name: 'Adam Carroll',
+    location: 'Anderson, SC',
+    text: 'Jeremy and his crew did a great job at our primary residence and rental property. They tackled some big projects for us. Were professional and hard working and did a great job communicating. Would definitely use them again!',
+    rating: 5,
+  },
+  {
+    name: 'Kimmy CeeAhh',
+    location: 'Anderson, SC',
+    text: "Husband & I purchased a home, but don't have a lawnmower yet. I called Jeremy with Mission Lawn Care & set up a trimming every other week. He does a wonderful job at a very reasonable price. And he leaves our driveway neat & clean once he's done. I'd recommend him to anyone that needs lawn care.",
+    rating: 5,
+  },
 ];
 
 const containerVariants = {
@@ -65,7 +77,7 @@ export default function Testimonials() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="max-w-2xl mx-auto"
+          className="grid grid-cols-1 md:grid-cols-3 gap-8"
         >
           {testimonials.map((testimonial, index) => (
             <motion.div
