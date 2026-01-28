@@ -96,7 +96,7 @@ export default function WhyChooseUs() {
           viewport={{ once: true, margin: "-100px" }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
         >
-          {pillars.map((pillar, index) => (
+          {pillars.map((pillar) => (
             <motion.div
               key={pillar.title}
               variants={itemVariants}
