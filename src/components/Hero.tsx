@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[85vh] flex items-center overflow-hidden py-20">
+    <section className="relative min-h-screen flex items-center overflow-hidden pt-24 pb-20 md:pt-20">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -43,7 +43,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="container-custom relative z-10 px-4 py-20">
+      <div className="container-custom relative z-10 px-4">
         <div className="max-w-3xl">
           {/* Veteran Badge */}
           <motion.div
