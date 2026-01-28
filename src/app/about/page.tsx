@@ -30,11 +30,11 @@ const values = [
 
 const serviceAreas = [
   'Anderson',
-  'Belton',
-  'Williamston',
-  'Pendleton',
+  'Greenville',
   'Clemson',
-  'Honea Path',
+  'Easley',
+  'Pendleton',
+  'Belton',
 ];
 
 export default function AboutPage() {
