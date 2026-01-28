@@ -14,15 +14,15 @@ const config: Config = {
         'brand-blue-dark': '#154668',
         'brand-blue-light': '#2A7AB8',
         // Secondary accent - green
-        'lawn-green': '#3A8A4A',
-        'lawn-green-dark': '#2D6B3A',
-        'lawn-green-light': '#4DA85E',
+        'lawn-green': '#7db02a',
+        'lawn-green-dark': '#5c8520',
+        'lawn-green-light': '#9cd04a',
         // Accent colors
         'patriot-red': '#B22234',
         'patriot-red-dark': '#8B1A28',
         'patriot-red-light': '#D4293F',
-        'accent-orange': '#E07B3A',
-        'accent-orange-light': '#F5A366',
+        'accent-orange': '#7db02a', // Now using green
+        'accent-orange-light': '#9cd04a', // Now using green
         // Legacy aliases for gradual migration
         'navy-blue': '#1E5A8A',
         'navy-blue-dark': '#154668',

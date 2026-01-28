@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useState } from 'react';
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Loader2, ExternalLink } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle, Loader2, ExternalLink, Navigation } from 'lucide-react';
 
 const contactSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -54,6 +54,17 @@ const subjects = [
   'Schedule Service',
   'Feedback',
   'Other',
+];
+
+const serviceAreas = [
+  { name: 'Anderson', distance: null, isPrimary: true },
+  { name: 'Greenville', distance: '30 miles' },
+  { name: 'Clemson', distance: '12 miles' },
+  { name: 'Seneca', distance: '18 miles' },
+  { name: 'Easley', distance: '15 miles' },
+  { name: 'Pendleton', distance: '8 miles' },
+  { name: 'Belton', distance: '8 miles' },
+  { name: 'Williamston', distance: '10 miles' },
 ];
 
 export default function ContactPage() {
@@ -323,7 +334,7 @@ export default function ContactPage() {
               <div className="accent-line mb-8" />
 
               {/* Map */}
-              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-lg mb-8 bg-gray-200">
+              <div className="aspect-video rounded-2xl overflow-hidden shadow-lg mb-8 bg-gray-200">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104872.59374982098!2d-82.7483771!3d34.5034394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88585e3d2ab1b4db%3A0xadb63e84be723e0c!2sAnderson%2C%20SC!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
                   width="100%"
@@ -369,6 +380,61 @@ export default function ContactPage() {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* Service Areas Section */}
+      <section className="section-padding bg-white">
+        <div className="container-custom">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="heading-secondary mb-4">
+              Service <span className="text-lawn-green">Areas</span>
+            </h2>
+            <div className="accent-line mx-auto mb-6" />
+            <p className="text-text-secondary text-lg max-w-3xl mx-auto font-body">
+              Proudly serving Anderson, SC and the greater Upstate region with professional lawn care services.
+              We cover all surrounding communities within a 30-mile radius of Anderson.
+            </p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="grid grid-cols-2 md:grid-cols-4 gap-4"
+          >
+            {serviceAreas.map((area, index) => (
+              <div
+                key={area.name}
+                className={`rounded-xl p-6 text-center transition-all duration-300 hover:shadow-lg ${
+                  area.isPrimary
+                    ? 'bg-lawn-green/10 border-2 border-lawn-green'
+                    : 'bg-gray-50 border border-gray-200 hover:border-lawn-green/50'
+                }`}
+              >
+                <div className={`w-10 h-10 rounded-full flex items-center justify-center mx-auto mb-3 ${
+                  area.isPrimary ? 'bg-lawn-green' : 'bg-gray-200'
+                }`}>
+                  <Navigation size={18} className={area.isPrimary ? 'text-white' : 'text-navy-blue'} />
+                </div>
+                <h3 className={`font-display font-bold uppercase tracking-tight mb-1 ${
+                  area.isPrimary ? 'text-lawn-green text-lg' : 'text-navy-blue'
+                }`}>
+                  {area.name}
+                </h3>
+                <p className={`text-sm ${area.isPrimary ? 'text-lawn-green-dark font-medium' : 'text-text-secondary'}`}>
+                  {area.isPrimary ? 'Primary Service Area' : area.distance}
+                </p>
+              </div>
+            ))}
+          </motion.div>
         </div>
       </section>
     </>

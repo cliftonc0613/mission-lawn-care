@@ -40,7 +40,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/images/mission-lawn-care-logo.png" />
-        <meta name="theme-color" content="#2D5A27" />
+        <meta name="theme-color" content="#7db02a" />
         <meta name="geo.region" content="US-SC" />
         <meta name="geo.placename" content="Anderson" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
