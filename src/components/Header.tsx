@@ -32,14 +32,14 @@ export default function Header() {
           <div className="flex items-center gap-6">
             <a 
               href="tel:8649406434" 
-              className="flex items-center gap-2 hover:text-lawn-green-light transition-colors"
+              className="flex items-center gap-2 hover:text-brand-blue-light transition-colors"
             >
               <Phone size={14} />
               <span className="font-semibold">(864) 940-6434</span>
             </a>
             <div className="flex items-center gap-2">
               <MapPin size={14} />
-              <span>Anderson, SC</span>
+              <span>Greenville, SC Area</span>
             </div>
           </div>
           <div className="veteran-badge text-xs">
@@ -59,8 +59,8 @@ export default function Header() {
         <div className="container-custom">
           <div className="flex items-center justify-between py-3 px-4">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3">
-              <div className="relative w-14 h-14 md:w-16 md:h-16">
+            <Link href="/" className="flex items-center">
+              <div className="relative w-24 h-24 md:w-32 md:h-32">
                 <Image
                   src="/images/mission-lawn-care-logo.png"
                   alt="Mission Lawn Care"
@@ -68,14 +68,6 @@ export default function Header() {
                   className="object-contain"
                   priority
                 />
-              </div>
-              <div className="hidden sm:block">
-                <h1 className="font-display text-xl md:text-2xl font-bold text-lawn-green uppercase tracking-tight leading-tight">
-                  Mission
-                </h1>
-                <p className="font-display text-sm md:text-base text-navy-blue uppercase tracking-wider -mt-1">
-                  Lawn Care
-                </p>
               </div>
             </Link>
 
@@ -85,7 +77,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="font-display text-lg uppercase tracking-wider text-text-primary hover:text-lawn-green transition-colors relative group"
+                  className="font-display text-lg uppercase tracking-wider text-text-primary hover:text-brand-blue transition-colors relative group"
                 >
                   {link.label}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-patriot-red transition-all duration-300 group-hover:w-full" />
@@ -98,7 +90,7 @@ export default function Header() {
               {/* Mobile Phone Number */}
               <a 
                 href="tel:8649406434" 
-                className="lg:hidden flex items-center gap-2 text-lawn-green font-bold"
+                className="lg:hidden flex items-center gap-2 text-brand-blue font-bold"
               >
                 <Phone size={20} className="animate-pulse" />
                 <span className="hidden sm:inline">(864) 940-6434</span>
@@ -141,7 +133,7 @@ export default function Header() {
                     <Link
                       href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="block font-display text-xl uppercase tracking-wider text-text-primary hover:text-lawn-green transition-colors py-2"
+                      className="block font-display text-xl uppercase tracking-wider text-text-primary hover:text-brand-blue transition-colors py-2"
                     >
                       {link.label}
                     </Link>

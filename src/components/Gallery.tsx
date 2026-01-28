@@ -74,11 +74,11 @@ export default function Gallery() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="inline-block text-lawn-green font-display uppercase tracking-widest text-sm mb-4">
+            <span className="inline-block text-brand-blue font-display uppercase tracking-widest text-sm mb-4">
               Our Work
             </span>
             <h2 className="heading-primary mb-4">
-              Photo <span className="text-lawn-green">Gallery</span>
+              Photo <span className="text-brand-blue">Gallery</span>
             </h2>
             <div className="accent-line mx-auto mb-6" />
             <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
@@ -113,7 +113,7 @@ export default function Gallery() {
                 
                 {/* Content */}
                 <div className="absolute inset-0 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="inline-block bg-lawn-green text-white text-xs uppercase tracking-wider px-3 py-1 rounded-full w-fit mb-2">
+                  <span className="inline-block bg-brand-blue text-white text-xs uppercase tracking-wider px-3 py-1 rounded-full w-fit mb-2">
                     {image.category}
                   </span>
                   <p className="text-white font-body">{image.alt}</p>

@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+    <section className="relative h-[85vh] flex items-center overflow-hidden">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -16,7 +16,7 @@ export default function Hero() {
       />
       
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-lawn-green/95 via-lawn-green/85 to-navy-blue/80" />
+      <div className="absolute inset-0 bg-gradient-to-r from-brand-blue/95 via-brand-blue/85 to-brand-blue-light/80" />
       
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -36,7 +36,7 @@ export default function Hero() {
           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div 
-          className="absolute bottom-32 left-[25%] w-3 h-3 bg-lawn-green-light/50 rounded-full"
+          className="absolute bottom-32 left-[25%] w-3 h-3 bg-brand-blue-light/50 rounded-full"
           animate={{ y: [0, -15, 0] }}
           transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
         />
@@ -79,7 +79,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl md:text-2xl text-white/90 mb-8 font-body font-light leading-relaxed"
           >
-            Professional lawn care services in Anderson, SC. We bring 
+            Professional lawn care services in Greenville, SC. We bring 
             <span className="font-semibold text-white"> military precision</span> and 
             <span className="font-semibold text-white"> dedication</span> to every yard we service.
           </motion.p>
@@ -117,10 +117,10 @@ export default function Hero() {
               Call (864) 940-6434
             </a>
             <Link
-              href="#quote"
-              className="btn-outline border-white text-white hover:bg-white hover:text-lawn-green inline-flex items-center justify-center gap-2 text-lg"
+              href="#contact"
+              className="btn-outline border-white text-white hover:bg-white hover:text-brand-blue inline-flex items-center justify-center gap-2 text-lg"
             >
-              Get Free Quote
+              Contact Us
               <ArrowRight size={20} />
             </Link>
           </motion.div>
@@ -132,7 +132,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.8 }}
             className="mt-8 text-white/60 text-sm font-body"
           >
-            Proudly serving Anderson, SC and surrounding areas
+            Proudly serving the Greenville, SC area and all of Upstate South Carolina
           </motion.p>
         </div>
       </div>

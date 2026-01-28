@@ -3,7 +3,7 @@ import Services from "@/components/Services";
 import Gallery from "@/components/Gallery";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
-import QuoteForm from "@/components/QuoteForm";
+import ContactInfo from "@/components/ContactInfo";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       <Gallery />
       <WhyChooseUs />
       <Testimonials />
-      <QuoteForm />
+      <ContactInfo />
     </>
   );
 }

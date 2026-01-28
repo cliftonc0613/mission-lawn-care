@@ -6,19 +6,19 @@ import { Star, Quote } from 'lucide-react';
 const testimonials = [
   {
     name: 'Sarah M.',
-    location: 'Anderson, SC',
+    location: 'Greenville, SC',
     text: 'Mission Lawn Care transformed our yard! Their attention to detail is unmatched. You can really see the military precision in their work.',
     rating: 5,
   },
   {
     name: 'Robert T.',
-    location: 'Anderson, SC',
+    location: 'Simpsonville, SC',
     text: 'Finally found a reliable lawn care service. They show up on time every week and my lawn has never looked better. Highly recommend!',
     rating: 5,
   },
   {
     name: 'Jennifer K.',
-    location: 'Anderson, SC',
+    location: 'Greer, SC',
     text: 'Love supporting a veteran-owned business, especially one that does such great work. Professional, courteous, and affordable.',
     rating: 5,
   },
@@ -58,16 +58,16 @@ export default function Testimonials() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block text-lawn-green font-display uppercase tracking-widest text-sm mb-4">
+          <span className="inline-block text-brand-blue font-display uppercase tracking-widest text-sm mb-4">
             Happy Customers
           </span>
           <h2 className="heading-primary mb-4">
-            What Our <span className="text-lawn-green">Clients</span> Say
+            What Our <span className="text-brand-blue">Clients</span> Say
           </h2>
           <div className="accent-line mx-auto mb-6" />
           <p className="text-text-secondary text-lg max-w-2xl mx-auto font-body">
             Don&apos;t just take our word for it. Here&apos;s what our satisfied customers 
-            in Anderson, SC have to say about our service.
+            across Upstate SC have to say about our service.
           </p>
         </motion.div>
 
@@ -87,7 +87,7 @@ export default function Testimonials() {
             >
               <div className="testimonial-card h-full hover:shadow-2xl transition-shadow duration-300">
                 {/* Quote Icon */}
-                <div className="absolute -top-4 right-6 w-12 h-12 bg-lawn-green rounded-full flex items-center justify-center shadow-lg">
+                <div className="absolute -top-4 right-6 w-12 h-12 bg-brand-blue rounded-full flex items-center justify-center shadow-lg">
                   <Quote size={24} className="text-white" />
                 </div>
 
@@ -106,7 +106,7 @@ export default function Testimonials() {
                 {/* Author */}
                 <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
                   {/* Avatar */}
-                  <div className="w-12 h-12 bg-gradient-to-br from-lawn-green to-navy-blue rounded-full flex items-center justify-center text-white font-display font-bold text-lg">
+                  <div className="w-12 h-12 bg-gradient-to-br from-brand-blue to-brand-blue-dark rounded-full flex items-center justify-center text-white font-display font-bold text-lg">
                     {testimonial.name.charAt(0)}
                   </div>
                   <div>
@@ -132,10 +132,8 @@ export default function Testimonials() {
           className="text-center mt-12"
         >
           <a
-            href="https://maps.app.goo.gl/t7SG8NmSsDhKsago6"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-lawn-green hover:text-lawn-green-dark transition-colors font-semibold group"
+            href="#"
+            className="inline-flex items-center gap-2 text-brand-blue hover:text-brand-blue-dark transition-colors font-semibold group"
           >
             <span>See More Reviews on Google</span>
             <svg 

@@ -8,7 +8,7 @@ const pillars = [
     icon: Medal,
     title: 'Veteran Owned',
     description: 'We bring military discipline, work ethic, and attention to detail to every job. Your lawn is our mission.',
-    color: 'bg-navy-blue',
+    color: 'bg-brand-blue',
   },
   {
     icon: Shield,
@@ -20,13 +20,13 @@ const pillars = [
     icon: Clock,
     title: 'Prompt Response',
     description: 'Quick estimates and fast scheduling. We respect your time and work around your schedule.',
-    color: 'bg-patriot-red',
+    color: 'bg-accent-orange',
   },
   {
     icon: Heart,
     title: 'Community Focused',
-    description: 'We\'re your neighbors in Anderson, SC. We take pride in beautifying our community, one lawn at a time.',
-    color: 'bg-lawn-green-dark',
+    description: 'We\'re your neighbors in the Greenville, SC area. We take pride in beautifying our community, one lawn at a time.',
+    color: 'bg-brand-blue-dark',
   },
 ];
 
@@ -63,8 +63,8 @@ export default function WhyChooseUs() {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-lawn-green/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-patriot-red/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-brand-blue-light/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-orange/10 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
 
       <div className="container-custom relative z-10">
         {/* Section Header */}
@@ -75,13 +75,13 @@ export default function WhyChooseUs() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="inline-block text-lawn-green-light font-display uppercase tracking-widest text-sm mb-4">
+          <span className="inline-block text-brand-blue-light font-display uppercase tracking-widest text-sm mb-4">
             The Mission Difference
           </span>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white uppercase tracking-tight mb-4">
-            Why Choose <span className="text-patriot-red">Us</span>
+            Why Choose <span className="text-accent-orange">Us</span>
           </h2>
-          <div className="h-1 w-20 bg-patriot-red rounded-full mx-auto mb-6" />
+          <div className="h-1 w-20 bg-accent-orange rounded-full mx-auto mb-6" />
           <p className="text-gray-300 text-lg max-w-2xl mx-auto font-body">
             When you hire Mission Lawn Care, you&apos;re getting more than just a lawn service. 
             You&apos;re partnering with a veteran-owned business committed to excellence.
@@ -102,7 +102,7 @@ export default function WhyChooseUs() {
               variants={itemVariants}
               className="group"
             >
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-lawn-green/50 transition-all duration-300 hover:bg-white/10 h-full">
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-brand-blue-light/50 transition-all duration-300 hover:bg-white/10 h-full">
                 {/* Icon */}
                 <div className={`w-16 h-16 ${pillar.color} rounded-2xl flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 shadow-lg`}>
                   <pillar.icon size={32} className="text-white" />
@@ -117,7 +117,7 @@ export default function WhyChooseUs() {
                 </p>
 
                 {/* Decorative line */}
-                <div className="mt-6 h-1 w-12 bg-gradient-to-r from-lawn-green to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="mt-6 h-1 w-12 bg-gradient-to-r from-brand-blue-light to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             </motion.div>
           ))}
@@ -138,7 +138,7 @@ export default function WhyChooseUs() {
             { number: 'Local', label: 'Owned' },
           ].map((stat, index) => (
             <div key={index} className="text-center">
-              <p className="font-display text-4xl md:text-5xl font-bold text-lawn-green mb-2">
+              <p className="font-display text-4xl md:text-5xl font-bold text-brand-blue-light mb-2">
                 {stat.number}
               </p>
               <p className="text-gray-400 uppercase tracking-wider text-sm font-display">
